@@ -1,0 +1,160 @@
+<!DOCTYPE html> <!-- Tells the browser this is an HTML5 document -->
+
+<html>
+<head>
+
+    <!-- Title shown in the browser tab -->
+    <title>Q3 Seatwork 2</title>
+
+    <!-- Bootstrap CSS framework for ready-made styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+
+<body>
+
+<!-- NAVIGATION BAR -->
+<nav class="navbar navbar-expand-md">
+  <div class="container-fluid">
+
+    <!-- Left side links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Shop</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Locate</a>
+      </li>
+    </ul>
+
+    <!-- Center Title -->
+    <center>
+      <h1>Product Locator</h1>
+    </center>
+
+    <!-- Search Bar -->
+    <form class="d-flex">
+      <input class="form-control me-2" type="text" placeholder="Search">
+      <button class="btn btn-primary" type="button">Search</button>
+    </form>
+
+  </div>
+</nav>
+
+<br>
+
+<!-- BUDGET SECTION -->
+<center>
+<div id="brands">
+
+  <form>
+    <h3>
+      Looking for some new Gunpla?? 
+      
+      <br>
+      Enter your budget and let's find the right grade for you!
+    </h3> 
+
+    <!-- User types budget here -->
+    <input type="text" class="form-control" id="budget" placeholder="Enter here...">
+  </form>
+
+</div>
+</center>
+
+<br>
+
+<!-- BUTTON SECTION -->
+<div class="container">
+  <div class="row">
+
+    <!-- Brand & Discount Button -->
+    <div>
+      <button id="buttons" class="btn" onclick="showBrand()">
+        Brand & Discounts
+      </button>
+
+      <!-- Output will appear here -->
+      <div id="brand"></div>
+    </div>
+
+    <!-- Store Location Button -->
+    <div>
+      <button id="buttons" class="btn" onclick="showStore()">
+        Store Location
+      </button>
+
+      <!-- Store info will appear here -->
+      <div id="stores"></div>
+    </div>
+
+  </div>
+</div>
+
+<!-- JAVASCRIPT SECTION -->
+<script>
+
+  // Function runs when Brand & Discounts button is clicked
+  function showBrand(){
+
+    // Get value from input field and convert to number
+    let budget = Number(document.getElementById('budget').value);
+
+    // Compute 20% discount
+    let disc = budget * 0.20;
+
+    // Format discount to 2 decimal places
+    let finalPrice = disc.toFixed(2);
+
+    // Display brands and discount inside "brand" div
+    document.getElementById("brand").innerHTML =
+
+      "<br><b style='color: white;'>Recommended Brands:<br>" +
+
+      "<button id='brand_btn' class='btn'>HG</button><br>" +
+
+      "<button id='brand_btn' class='btn'>RG</button><br>" +
+
+      "<button id='brand_btn' class='btn'>MG</button><br>" +
+
+      "<button id='brand_btn' class='btn'>PG</button><br>" +
+
+      "<br><br>You are eligible for: " +
+
+      "<span style='color: red;'><kbd style='font-size: 25px;'>" +
+      finalPrice +
+      "</kbd></span> discount.</b>";
+  }
+
+
+  // Function runs when Store Location button is clicked
+  function showStore(){
+
+    // Insert store information inside "stores" div
+    document.getElementById("stores").innerHTML =
+
+      "<br><img id='HOBBY ALLEY' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo2H4yz_AYmFYqzyB3MR18BduS4hW0zwPBKg&s' class='img-thumbnail'><br>" +
+
+      "<br><b style='color: white;'>Location:<br>" +
+
+      "<i>Corner Roosevelt, 2ND FLOOR VIRKA Bldg 1191 EDSA, Fernando Poe Jr. Ave, Quezon City, 1105 Metro Manila</i><br>" +
+
+      "<br><img id='TOYTOWN' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTapaaHcuUviVD3WyXvizn1JmMcFyeScXcg_A&s' class='img-thumbnail'><br>" +
+
+      "<br><b style='color: white;'>Location:<br>" +
+
+      "<i>Glorietta 4, 3RD FLOOR 4 Palm Dr, Makati City, 1200 Metro Manila</i>";
+  }
+
+</script>
+
+<br><br><br>
+
+<!-- FOOTER -->
+<div class="footer">
+  <hr style="color:white;">
+  <center>&copy; <label style="color:white;">Student Name</label></center>
+</div>
+
+</body>
+</html>

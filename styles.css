@@ -1,0 +1,176 @@
+  * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Helvetica, sans-serif;
+        }
+
+        body {
+            font-family:'Stencil Std, fantasy',sans-serif;
+            text-align: left;
+            background: <img src="https://images4.alphacoders.com/827/thumb-1920-82744.jpg" alt="IT'S THE WHITE DEVIL!"> ;
+        }
+
+
+     /* navigation bar elements */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background-color: #1a1a1a;
+            position: relative;
+            z-index: 10;
+            width: 100%;
+        }
+
+         .nav-links {
+        list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+        }
+
+            .nav-buttons .book {
+            margin-right: 15px;
+            color: white;
+            text-decoration: none;
+        }
+        
+        .create-btn {
+            background-color: #014029;
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: white;
+        }
+
+        /* hero  background */
+        .hero {
+            min-height: calc(100vh - 130px); 
+            background: url("https://via.placeholder.com/1920x1080") no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+        }
+
+           /* registration styling */
+        .registration-card {
+            display: flex;
+            width: 800px;
+            max-width: 100%;
+            background: rgba(0, 188, 212, 0.25);
+            backdrop-filter: blur(5px);
+            border-radius: 15px;
+            padding: 30px;
+        }
+
+        /* left */
+        .panel-left {
+            width: 40%;
+            text-align: center;
+        }
+
+            .profile-placeholder {
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            color: black;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 20px;
+            font-size: 14px;
+        }
+
+        .upload-btn {
+            margin-top: 10px;
+            background-color: #014029;
+            border: none;
+            padding: 8px 12px;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+
+        /* right */
+        .panel-right {
+            width: 60%;
+            padding-left: 20px;
+        }
+
+        .panel-right h1 {
+            margin-bottom: 10px;
+        }
+
+        .instructions {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        form label {
+            display: block;
+            margin-top: 10px;
+            font-size: 14px;
+         }
+
+        form input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: none;
+         }
+
+        .row {
+            display: flex;
+            gap: 10px;
+        }
+
+        .row div {
+            flex: 1;
+        }
+
+        .terms {
+            margin-top: 15px;
+            font-size: 13px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #014029;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .cancel-btn {
+            width: 100%;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #ccc;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* footer styling */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #1a1a1a;
+            font-size: 14px;
+            color: white;
+          }
