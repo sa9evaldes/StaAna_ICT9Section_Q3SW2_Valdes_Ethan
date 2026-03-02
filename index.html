@@ -7,7 +7,128 @@
     <title>Q3 Seatwork 2</title>
 
     <!-- Bootstrap CSS framework for ready-made styles -->
-    <link rel="stylesheet" href="styles.css">
+    <style>
+              body {
+            font-family:'Stencil Std, fantasy',sans-serif;
+            text-align: left;
+            background: url('https://i.redd.it/738fow05l1461.jpg') ;
+        }
+
+#grades{
+        width: 860px;
+        background-color: #014029; 
+        height: 200px;
+        padding: 20px;
+        border-radius: 15px;
+      }
+
+
+            h3 {
+        color: #005249; 
+        text-decoration: none;
+         text-shadow:
+    -1px -1px 0 #fff,
+     1px -1px 0 #fff,
+    -1px  1px 0 #fff,
+     1px  1px 0 #fff;
+
+        }
+     /* navigation bar elements */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background-color: #014029;
+            position: relative;
+            z-index: 10;
+            width: 100%;
+            border-radius: 15px;
+        }
+
+            a:link, a:visited, a:hover, a:active {
+        color: #005249; 
+        text-decoration: none;
+         text-shadow:
+    -1px -1px 0 #fff,
+     1px -1px 0 #fff,
+    -1px  1px 0 #fff,
+     1px  1px 0 #fff;
+        }
+
+
+            h1 {
+        color: #005249; 
+        text-decoration: none;
+         text-shadow:
+    -1px -1px 0 #fff,
+     1px -1px 0 #fff,
+    -1px  1px 0 #fff,
+     1px  1px 0 #fff;
+        }
+        
+        #buttons, #grade_btn{
+        color: white;
+        background-color: #014029;
+        border: 3px solid gray;
+        border-radius: 20px;
+        width: 300px;
+        font-size: 20px;
+        cursor: pointer;
+      }
+        
+       #grade_btn{
+        font-size: 15px;
+        background-image: linear-gradient(to right, black, #014029);
+
+        #budget{
+        text-align: center;
+        font-size: 25px;
+        color: #014029;
+      } 
+       
+
+        /* hero  background */
+        .hero {
+            min-height: calc(100vh - 130px); 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+        }
+
+    
+
+      #HOBBY ALLEY, #TOYTOWN{
+          height: 100px;
+          width: 300px;
+      }
+
+        .row {
+            display: flex;
+            gap: 10px;
+         text-align: center;
+        }
+
+        .row div {
+            flex: 1;
+        }
+
+     
+
+
+        /* footer styling */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #1a1a1a;
+            font-size: 14px;
+            color: white;
+
+          }
+    </style>>
     
 </head>
 
@@ -20,16 +141,16 @@
     <!-- Left side links -->
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="#">Shop</a>
+        <a class="nav-link" href="#">SHOP</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Locate</a>
+        <a class="nav-link" href="#">LOCATE</a>
       </li>
     </ul>
 
     <!-- Center Title -->
     <center>
-      <h1>Product Locator</h1>
+      <h1>THE GUNPLA RADAR!</h1>
     </center>
 
     <!-- Search Bar -->
@@ -45,11 +166,11 @@
 
 <!-- BUDGET SECTION -->
 <center>
-<div id="brands">
+<div id="grades">
 
   <form>
     <h3>
-      Looking for some new Gunpla?? 
+      Looking for some new Gunpla?
       
       <br>
       Enter your budget and let's find the right grade for you!
@@ -68,14 +189,14 @@
 <div class="container">
   <div class="row">
 
-    <!-- Brand & Discount Button -->
+    <!-- grade & Discount Button -->
     <div>
-      <button id="buttons" class="btn" onclick="showBrand()">
-        Brand & Discounts
+      <button id="buttons" class="btn" onclick="showgrade()">
+        Grades & Discounts
       </button>
 
       <!-- Output will appear here -->
-      <div id="brand"></div>
+      <div id="grade"></div>
     </div>
 
     <!-- Store Location Button -->
@@ -94,8 +215,8 @@
 <!-- JAVASCRIPT SECTION -->
 <script>
 
-  // Function runs when Brand & Discounts button is clicked
-  function showBrand(){
+  // Function runs when grade & Discounts button is clicked
+  function showgrade(){
 
     // Get value from input field and convert to number
     let budget = Number(document.getElementById('budget').value);
@@ -106,18 +227,18 @@
     // Format discount to 2 decimal places
     let finalPrice = disc.toFixed(2);
 
-    // Display brands and discount inside "brand" div
-    document.getElementById("brand").innerHTML =
+    // Display grades and discount inside "grade" div
+    document.getElementById("grade").innerHTML =
 
-      "<br><b style='color: white;'>Recommended Brands:<br>" +
+      "<br><b style='color: white;'>Gunpla Grades:<br>" +
 
-      "<button id='brand_btn' class='btn'>HG</button><br>" +
+      "<button id='grade_btn' class='btn'>HG</button><br>" +
 
-      "<button id='brand_btn' class='btn'>RG</button><br>" +
+      "<button id='grade_btn' class='btn'>RG</button><br>" +
 
-      "<button id='brand_btn' class='btn'>MG</button><br>" +
+      "<button id='grade_btn' class='btn'>MG</button><br>" +
 
-      "<button id='brand_btn' class='btn'>PG</button><br>" +
+      "<button id='grade_btn' class='btn'>PG</button><br>" +
 
       "<br><br>You are eligible for: " +
 
@@ -153,7 +274,7 @@
 <!-- FOOTER -->
 <div class="footer">
   <hr style="color:white;">
-  <center>&copy; <label style="color:white;">Student Name</label></center>
+  <center>&copy; <label style="color:white;">Ethan Valdes</label></center>
 </div>
 
 </body>
