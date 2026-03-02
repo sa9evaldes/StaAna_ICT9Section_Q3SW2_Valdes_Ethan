@@ -8,8 +8,15 @@
         body {
             font-family:'Stencil Std, fantasy',sans-serif;
             text-align: left;
-            background: <img src="https://images4.alphacoders.com/827/thumb-1920-82744.jpg" alt="IT'S THE WHITE DEVIL!"> ;
+            background: url('https://images4.alphacoders.com/827/thumb-1920-82744.jpg') ;
         }
+
+#brands{
+        width: 860px;
+        background-color: rgba(0, 215, 252, 0.5); 
+        height: 200px;
+        padding: 20px;
+      }
 
 
      /* navigation bar elements */
@@ -24,35 +31,30 @@
             width: 100%;
         }
 
-         .nav-links {
-        list-style: none;
-            display: flex;
-            gap: 25px;
-        }
-
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-        }
-
-            .nav-buttons .book {
-            margin-right: 15px;
-            color: white;
-            text-decoration: none;
-        }
+        #buttons, #brand_btn{
+        color: white;
+        background-color: #014029;
+        border: 3px solid gray;
+        border-radius: 20px;
+        width: 300px;
+        font-size: 20px;
+        cursor: pointer;
+      }
         
-        .create-btn {
-            background-color: #014029;
-            padding: 8px 15px;
-            border-radius: 5px;
-            text-decoration: none;
-            color: white;
-        }
+       #brand_btn{
+        font-size: 15px;
+        background-image: linear-gradient(to right, black, #014029);
+
+        #budget{
+        text-align: center;
+        font-size: 25px;
+        color: #014029;
+      } 
+       
 
         /* hero  background */
         .hero {
             min-height: calc(100vh - 130px); 
-            background: url("https://via.placeholder.com/1920x1080") no-repeat center center/cover;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -173,4 +175,5 @@
             background-color: #1a1a1a;
             font-size: 14px;
             color: white;
+
           }
