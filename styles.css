@@ -1,10 +1,3 @@
-  * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Helvetica, sans-serif;
-        }
-
         body {
             font-family:'Stencil Std, fantasy',sans-serif;
             text-align: left;
@@ -13,7 +6,7 @@
 
 #brands{
         width: 860px;
-        background-color: rgba(0, 215, 252, 0.5); 
+        background-color: #005249; 
         height: 200px;
         padding: 20px;
       }
@@ -74,99 +67,23 @@
             padding: 30px;
         }
 
-        /* left */
-        .panel-left {
-            width: 40%;
-            text-align: center;
-        }
-
-            .profile-placeholder {
-            width: 150px;
-            height: 150px;
-            background-color: white;
-            color: black;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0 auto 20px;
-            font-size: 14px;
-        }
-
-        .upload-btn {
-            margin-top: 10px;
-            background-color: #014029;
-            border: none;
-            padding: 8px 12px;
-            color: white;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-
-        /* right */
-        .panel-right {
-            width: 60%;
-            padding-left: 20px;
-        }
-
-        .panel-right h1 {
-            margin-bottom: 10px;
-        }
-
-        .instructions {
-            font-size: 14px;
-            margin-bottom: 15px;
-        }
-
-        form label {
-            display: block;
-            margin-top: 10px;
-            font-size: 14px;
-         }
-
-        form input {
-            width: 100%;
-            padding: 8px;
-            margin-top: 5px;
-            border-radius: 5px;
-            border: none;
-         }
+      #HOBBY ALLEY, #TOYTOWN{
+          height: 100px;
+          width: 300px;
+      }
 
         .row {
             display: flex;
             gap: 10px;
+         text-align: center;
         }
 
         .row div {
             flex: 1;
         }
 
-        .terms {
-            margin-top: 15px;
-            font-size: 13px;
-        }
+     
 
-        .submit-btn {
-            width: 100%;
-            margin-top: 15px;
-            padding: 10px;
-            background-color: #014029;
-            border: none;
-            color: white;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .cancel-btn {
-            width: 100%;
-            margin-top: 10px;
-            padding: 10px;
-            background-color: #ccc;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
 
         /* footer styling */
         footer {
@@ -177,3 +94,4 @@
             color: white;
 
           }
+
